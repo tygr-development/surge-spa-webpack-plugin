@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tygr-development/surge-spa-webpack-plugin.svg?branch=master)](https://travis-ci.org/tygr-development/surge-spa-webpack-plugin)
+
 # Surge SPA Webpack Plugin
 
 This plugin creates a copy of the index.html file and calls it 200.html.
@@ -30,14 +32,6 @@ module.exports = {
 ```
 
 ## Tests
-
-First prepare the test directory by installing this plugin and building an example webpack project
-
-```
-yarn prepare-tests
-```
-
-Then
 
 ```
 yarn test
