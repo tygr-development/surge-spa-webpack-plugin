@@ -1,7 +1,14 @@
 language: node_js
 node_js: 10
 cache: yarn
-
 script:
-  - yarn lint
-  - yarn test
+- yarn lint
+- yarn test
+deploy:
+  provider: npm
+  email: tylergrinn@gmail.com
+  api_key:
+    secure: PzepDhFa79GriOpR4/Q79iXzaM35VdcV9Y03YQrfOQUegiuBhZ8plj6uAOPsJXjnhBHM7tmatA30QyEgstGh1HsVaff8jdx+EqscO/OZ85jpG/IRSBcDjZkzLOzFqfu8v8JL14r/fiLnS7gYaz2jkCwGelbujS+APZ1k7wJIiF4au/VfL0Z7KYAdP5zFdyxLds2uD+6rWPZmVS2jebPRx0H6bD+Yvftfa5u5QeOhpaWbGqOqn60ID6tJMbp4TS9JKUk3OnuOrRJfJps+6BwKC7RWl1gRG40+mNdvK5yJMoE8G6YeTmcRz+0nsgLI8tT+cwt4ZupHvazimGBkyYrzte3lr4H5JPftfXSLFThMJD3xPyR6csbzagAPb5ohEx9a/Vr/YpcRK+2moV2TBAstPOfWE2a7PKyqLsps6z4IRQf/XWxdSNHSHhpKFhdPtMPlS2SLTHO7prj/TKHGPDR5L0wno9aFoCahVtEPq1pP9Cty1mfCF2d/EsZvWZDovN1l58lSE4n7FAYxmPkwBhxAA1vKzX+kfTeF604pNrMpBWZK+j3Y5kIYNY+ORrYdRgCcWd5kE381dF6rxqJCbPbD+PtWc8zLChorgFHVBh0HuNBwt74Xu+plKbhH7ZyLkrjkd0HRg4MPz65pSGqRCwXkUVPCv5R/fU3FaHQNrsPV3fs=
+  on:
+    tags: true
+    repo: tygr-development/surge-spa-webpack-plugin
