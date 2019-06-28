@@ -1,0 +1,37 @@
+{
+  "name": "surge-spa-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin to create 200.html page for surge.sh deployment",
+  "main": "index.js",
+  "scripts": {
+    "prepare-tests": "yarn --cwd test add -D ../ && yarn --cwd test build",
+    "test": "yarn --cwd test test",
+    "lint": "eslint index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tygr-development/surge-spa-webpack-plugin.git"
+  },
+  "keywords": [
+    "Surge.sh",
+    "surge",
+    "webpack",
+    "plugin"
+  ],
+  "author": "Tyler Grinn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tygr-development/surge-spa-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/tygr-development/surge-spa-webpack-plugin#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1"
+  },
+  "peerDependencies": {
+    "webpack": "4"
+  }
+}

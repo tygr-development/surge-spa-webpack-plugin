@@ -1,0 +1,9 @@
+language: node_js
+cache: yarn
+
+jobs:
+  - stage: build
+    script: yarn prepare-tests  
+  - stage: test
+    script: yarn lint
+    script: yarn test

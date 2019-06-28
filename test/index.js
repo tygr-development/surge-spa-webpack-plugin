@@ -1,0 +1,1 @@
+console.log('Surge SPA Webpack Plugin')
