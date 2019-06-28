@@ -1,6 +1,6 @@
 {
   "name": "surge-spa-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack plugin to create 200.html page for surge.sh deployment",
   "main": "index.js",
   "scripts": {
