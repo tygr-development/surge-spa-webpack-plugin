@@ -4,10 +4,10 @@
   "description": "Webpack plugin to create 200.html page for surge.sh deployment",
   "main": "index.js",
   "scripts": {
-    "test": "run-s prepare-tests build test:unit",
-    "prepare-tests": "yarn --cwd test add -D ../",
-    "build": "yarn --cwd test build",
-    "test:unit": "yarn --cwd test test",
+    "test": "run-s test:prepare test:build test:e2e",
+    "test:prepare": "yarn --cwd test add -D ../",
+    "test:build": "yarn --cwd test build",
+    "test:e2e": "yarn --cwd test test",
     "lint": "eslint index.js"
   },
   "files": [
